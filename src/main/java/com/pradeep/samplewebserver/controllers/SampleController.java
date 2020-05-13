@@ -21,11 +21,6 @@ public class SampleController {
 				map.putIfAbsent(id, new Object());
 				System.out.println(id + " initial call start");
 				// processing method call here
-				try {
-					Thread.sleep(1 * 1000);
-				} catch (InterruptedException e) {
-					e.printStackTrace();
-				}
 				System.out.println(id + " initial call end");
 			}
 			else {
