@@ -22,16 +22,20 @@ public class SampleController {
 				System.out.println(id + " initial call start");
 				// processing method call here
 				try {
-					Thread.sleep(id * 1000);
+					Thread.sleep(1 * 1000);
 				} catch (InterruptedException e) {
 					e.printStackTrace();
 				}
 				System.out.println(id + " initial call end");
 			}
+			else {
+				System.out.println(id + " subsequent call");
+				// processing method call here
+			}
 		}
-		if (map.containsKey(id)) {
+		/*if (map.containsKey(id)) {
 			System.out.println(id + " subsequent call");
 			// processing method call here
-		}
+		}*/
 	}
 }
